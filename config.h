@@ -7,8 +7,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int startwithgaps	     = 1;	 /* 1 means gaps are used by default */
 static const unsigned int gappx     = 10;       /* default gap between windows in pixels */
-static const char *fonts[]          = { "Hasklug Nerd Font Mono:size=12" };
-static const char dmenufont[]       = "Hasklug Nerd Font Mono:size=12";
+static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=12" };
+static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#141322";
 static const char col_gray2[]       = "#7f7ce3";
 static const char col_gray3[]       = "#d9e1ff";
@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2" };
+static const char *tags[] = { "1", "2", "3", "4" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "st-256color",     NULL,       NULL,       0,            0,           -1 },
-	{ "min",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
